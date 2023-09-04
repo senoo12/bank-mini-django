@@ -33,7 +33,7 @@ class TransactionAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
 class RekeningAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     list_display = ('id', 'jenis_rekening', 'nomer_rekening', 'saldo', 'tanggal_join', 'user_id_id')
-    readonly_fields = ['nomer_rekening', 'saldo',]
+    readonly_fields = ['nomer_rekening']
 
 @admin.register(History)
 class HistoryAdmin(ImportExportModelAdmin, admin.ModelAdmin):
